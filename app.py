@@ -19,17 +19,17 @@ app = Flask(__name__)
 def main_page():
     return render_template("main_page.html")
 
-@app.route("/page1")
-def page1():
-    return render_template("page1.html")
+@app.route("/freshman_year")
+def freshman_year():
+    return render_template("freshman_year.html")
 
 @app.route("/page2")
 def page2():
     return render_template("page2.html")
 
-@app.route("/page3")
-def page3():
-    return render_template("page3.html")
+@app.route("/massive_pairplot")
+def massive_pairplot():
+    return render_template("massive_pairplot.html")
 
 #start the server
 if __name__ == "__main__":
