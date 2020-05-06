@@ -29,6 +29,10 @@ def my_vlogs():
 def massive_pairplot():
     return render_template("massive_pairplot.html")
 
+@app.route("/3d_renders")
+def renders():
+    return render_template("3d_renders.html")
+
 #start the server
 if __name__ == "__main__":
     app.run()
