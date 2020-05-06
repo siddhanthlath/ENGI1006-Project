@@ -8,8 +8,6 @@
 
 #import statements
 from flask import Flask, render_template
-import requests
-import pandas as pd
 
 #Flask app variable
 app = Flask(__name__)
@@ -23,9 +21,9 @@ def main_page():
 def freshman_year():
     return render_template("freshman_year.html")
 
-@app.route("/page2")
-def page2():
-    return render_template("page2.html")
+@app.route("/my_vlogs")
+def my_vlogs():
+    return render_template("my_vlogs.html")
 
 @app.route("/massive_pairplot")
 def massive_pairplot():
